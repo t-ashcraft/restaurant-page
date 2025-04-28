@@ -6,8 +6,7 @@ body {
 
 header {
     position:fixed;
-    top:0;
-    height:max(10vh,5rem);
+    height:10vh;
     width:100vw;
     background-color: rgb(43, 43, 43);
     color:rgb(228, 209, 66);
@@ -22,8 +21,18 @@ header>img {
     filter: hue-rotate(180deg) invert(1);
 }
 
+header>nav>button {
+    padding:12px;
+    background-color:black;
+    border-radius:1rem;
+    box-shadow: 2px 2px 4px rgb(228, 209, 66);
+    color:rgb(228, 209, 66);
+    margin-right:2rem;
+
+}
+
 footer {
-    position:fixed;
+    
     bottom:0;
     width:100vw;
     left:0;
@@ -40,5 +49,45 @@ footer>img {
     width:7rem;
     height:auto;
     filter: hue-rotate(180deg) invert(1);
+}
+
+#content {
+    padding-top:10vh;
+    min-height:85vh;
+    width:100vh;
+}
+
+#home-container {
+    margin-top:5vh;
+    padding-bottom:10vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:100vw;
+    background-color:rgba(21,21,21,50%);
+}
+
+#left-side {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:1vh;
+    color:rgb(228, 209, 66);
+    margin:5vh;
+
+}
+#left-side>h1 {
+    font-size:6rem;
+}
+
+#left-side>p {
+    font-size:1.25rem;
+}
+
+#right-side>img {
+    min-width:50vw;
+    height:auto;
+    align-self:auto;
+    padding-top:10vh
 }
 
