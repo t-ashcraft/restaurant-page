@@ -1,6 +1,7 @@
 import "./style.css";
 import {loadHome} from "./home";
 import {loadMenu} from "./menu";
+import {loadContact} from "./contact";
 
 const body = document.querySelector("body");
 
@@ -27,6 +28,12 @@ menuButton.addEventListener("click", function(e) {
     clearContent();
     loadMenu(content);
 }); 
+
+contactButton.addEventListener("click", function(e) {
+    clearContent();
+    loadContact(content);
+}); 
+
 
 loadHome(content);
 

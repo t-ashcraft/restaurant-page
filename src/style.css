@@ -6,12 +6,12 @@ body {
 
 header {
     position:fixed;
-    height:10vh;
+    height:7rem;
     width:100vw;
     background-color: rgb(43, 43, 43);
     color:rgb(228, 209, 66);
     display:grid;
-    grid-template-columns: 5rem 1fr 20%;
+    grid-template-columns: 5rem 3fr 1fr;
     align-items: center;
 }
 
@@ -21,8 +21,13 @@ header>img {
     filter: hue-rotate(180deg) invert(1);
 }
 
+header>nav {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 header>nav>button {
-    padding:12px;
+    padding:clamp(2px, 12px, 12px);
     background-color:black;
     border-radius:1rem;
     box-shadow: 2px 2px 4px rgb(228, 209, 66);
@@ -42,7 +47,8 @@ footer {
     justify-content: center;
     align-items: center;
     text-align:center;
-    color:antiquewhite
+    color:antiquewhite;
+    margin-bottom:0;
 }
 
 footer>img {
@@ -52,7 +58,7 @@ footer>img {
 }
 
 #content {
-    padding-top:10vh;
+    padding-top:7rem;
     min-height:85vh;
     width:100vh;
 }
@@ -85,7 +91,7 @@ footer>img {
 }
 
 #right-side>img {
-    min-width:50vw;
+    width:50vw;
     height:auto;
     align-self:auto;
     padding-top:10vh
@@ -117,4 +123,35 @@ footer>img {
 
 #menu-container>.menu-item>p {
     font-style:italic;
+}
+
+#contact-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr; 
+    width:100vw;
+    background-color:rgba(21,21,21,50%);
+    margin-top:6vh;
+}
+
+#left-contact {
+    display:flex;
+    justify-content: center;
+}
+
+#left-contact>img {
+    height:40vw;
+    width:auto;
+    filter: hue-rotate(180deg) invert(1);
+}
+
+#right-contact {
+    display:flex;
+    flex-direction: column;
+    color: rgb(228, 209, 66);
+    justify-content: center;
+    align-items: left;
+}
+
+#right-contact>h2 {
+    font-size:xx-large;
 }
