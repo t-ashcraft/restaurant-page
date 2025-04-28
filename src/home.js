@@ -15,6 +15,4 @@ export function loadHome(content) {
         </div>
     `
 
-    content.appendChild(container);
-
 }
